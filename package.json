@@ -1,0 +1,40 @@
+{
+  "name": "hostfully_automation",
+  "version": "1.0.0",
+  "description": "Automation Excercise - Hostfully Job Apply",
+  "main": "index.js",
+  "scripts": {
+    "bootC": "npx cypress run",
+    "openC": "npx cypress open",
+    "chromeTestR": "npm run bootC -- --browser chrome --headed",
+    "mochaReportsComputerDatabase": "node_modules\\.bin\\cypress run --reporter mochawesome --spec cypress\\integration\\BDD\\computerDatabase.feature",
+    "mochaReportsAll": "cypress run --reporter mochawesome",
+    "cypressDashboardAll": "npx cypress run --record --key 692b7ea5-22e2-4b3a-9d4f-4802cdbc099c"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "Jose Salgado",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8"
+  },
+  "devDependencies": {
+    "cypress": "^12.11.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "multiple-cucumber-html-reporter": "^2.0.0"
+  },
+  "keywords": [
+    "ha"
+  ]
+}

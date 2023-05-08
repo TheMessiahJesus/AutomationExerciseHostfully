@@ -1,0 +1,154 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-05-08T04:51:21.302Z",
+    "end": "2023-05-08T04:51:33.743Z",
+    "duration": 12441,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cf94b138-93b4-4abf-93e4-ceb3d3d24131",
+      "title": "",
+      "fullFile": "cypress\\integration\\BDD\\computerDatabase.feature",
+      "file": "cypress\\integration\\BDD\\computerDatabase.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ca5e09b5-37fe-49cf-afb5-8bc283fc44fb",
+          "title": "Computer Database Web Page Validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "CD001_D001_TS001 Adding a new computer",
+              "fullTitle": "Computer Database Web Page Validation CD001_D001_TS001 Adding a new computer",
+              "timedOut": null,
+              "duration": 4866,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: expected false to be true",
+                "estack": "AssertionError: expected false to be true\n    at Context.eval (cypress/support/pageObjects/HomePage.js:145:79)",
+                "diff": null
+              },
+              "uuid": "71c1a8fb-54d4-4bf6-9b4b-ad43f1c5d066",
+              "parentUUID": "ca5e09b5-37fe-49cf-afb5-8bc283fc44fb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "CD001_D001_TS002 Test the filter for correct word fragment and whole incidences",
+              "fullTitle": "Computer Database Web Page Validation CD001_D001_TS002 Test the filter for correct word fragment and whole incidences",
+              "timedOut": null,
+              "duration": 4231,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e04544a0-2c0a-4c52-9e65-3dcaa304f163",
+              "parentUUID": "ca5e09b5-37fe-49cf-afb5-8bc283fc44fb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "CD001_D001_TS003 Test the API calls for adding a computer",
+              "fullTitle": "Computer Database Web Page Validation CD001_D001_TS003 Test the API calls for adding a computer",
+              "timedOut": null,
+              "duration": 461,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: expected false to be true",
+                "estack": "AssertionError: expected false to be true\n    at Context.eval (cypress/support/pageObjects/HomePage.js:213:46)",
+                "diff": null
+              },
+              "uuid": "c24233cc-bfcb-4ba4-addc-efaf34f36983",
+              "parentUUID": "ca5e09b5-37fe-49cf-afb5-8bc283fc44fb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e04544a0-2c0a-4c52-9e65-3dcaa304f163"
+          ],
+          "failures": [
+            "71c1a8fb-54d4-4bf6-9b4b-ad43f1c5d066",
+            "c24233cc-bfcb-4ba4-addc-efaf34f36983"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9558,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/results",
+        "reportFileName": "report",
+        "overwrite": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

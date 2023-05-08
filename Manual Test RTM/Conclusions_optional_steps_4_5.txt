@@ -1,0 +1,15 @@
+4. [OPTIONAL]: Provide a summary of your findings, including any issues you
+encountered and how you resolved them.
+5. [OPTIONAL]: Include a brief explanation of how you approached the task and why
+you made certain decisions.
+
+
+Firstly, thank you for this wonderful opportunity. I thoroughly enjoyed working on this exercise, and acquired more knowledge at the same time.
+
+As for the exercise itself, before starting the automation, I tested it manually on the web browser and noticed some peculiarities, especially when adding computers. Although a successful message was displayed after the computer was added, I found that it was not being saved and displayed in the UI database table upon checking. I tested multiple combinations of data in the computer creation form, but the error persisted. Upon inspecting the API network tab responses, I noticed that the page was automatically redirected with a 308 status code after being added, but it was not clear if it was storing information or just redirecting.
+
+Therefore, I decided to visually assert the failure by testing and leaving open the way to test the computer combinations before adding them. I also tested the filter and the data population of the table to ensure it was working as expected for fragment filter values or whole word filter values. Additionally, I made API automation calls to test that the GET known calls retrieve the required information and to determine that the POST was not saving anything in the database.
+
+I proceeded by creating a manual Excel test RTM document to record my ideas and steps and then automated the tests, registering the results using Mochawesome and Cypress dashboard reports, test execution videos, and Excel test screenshots.
+
+The logic for the automation was interesting because I allowed for some crazy combinations to be tested, and the code is commented to make it easier to follow.

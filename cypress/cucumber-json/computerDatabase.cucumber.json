@@ -1,0 +1,172 @@
+[
+  {
+    "description": "    Application Regression",
+    "keyword": "Feature",
+    "name": "Computer Database Web Page Validation",
+    "line": 1,
+    "id": "computer-database-web-page-validation",
+    "tags": [],
+    "uri": "computerDatabase.feature",
+    "elements": [
+      {
+        "id": "computer-database-web-page-validation;cd001_d001_ts001-adding-a-new-computer",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "CD001_D001_TS001 Adding a new computer",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open Computer Database io Page",
+            "result": {
+              "status": "passed",
+              "duration": 518000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I fill the data and add a new computer",
+            "result": {
+              "status": "passed",
+              "duration": 1640000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Validate that a message that the computer was added displays correctly",
+            "result": {
+              "status": "passed",
+              "duration": 2009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Use the filter box to assert if the computer exists in the table to verify it was added correctly",
+            "result": {
+              "status": "failed",
+              "duration": 716000000,
+              "error_message": "AssertionError: expected false to be true\n    at Context.eval (cypress/support/pageObjects/HomePage.js:145:79)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "computer-database-web-page-validation;cd001_d001_ts002-test-the-filter-for-correct-word-fragment-and-whole-incidences",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "CD001_D001_TS002 Test the filter for correct word fragment and whole incidences",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open Computer Database io Page",
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "value",
+                      "mode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ac",
+                      "fragment"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "amiga 500",
+                      "whole"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill the filter computer box",
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Assert that the data that was input matches with the data that is displayed in the UI table",
+            "result": {
+              "status": "passed",
+              "duration": 3555000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "computer-database-web-page-validation;cd001_d001_ts003-test-the-api-calls-for-adding-a-computer",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "CD001_D001_TS003 Test the API calls for adding a computer",
+        "tags": [
+          {
+            "name": "@API",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I add a computer and assert the page redirect returns a 400 code when doing an add POST call, thus confirming that the web page is read-only as it was deduced on TC #CD001_D001_TS001_TC001",
+            "result": {
+              "status": "passed",
+              "duration": 145000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I assert if the computer exists in the JSON response file that will later on populate the UI computer database table",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: expected false to be true\n    at Context.eval (cypress/support/pageObjects/HomePage.js:213:46)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

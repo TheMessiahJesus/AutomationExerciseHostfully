@@ -22,13 +22,13 @@ https://github.com/TheMessiahJesus/AutomationExerciseHostfully
 	A.1) The previous step should prompt an error unless you have already installed node.js in your operative system. To do that, do as follows (if you do not have it):
 		A.1.1) Open the web browser and go to nodejs.org/en/download/ and install it. Open the .msi file by double clicking it after download and click next->next->next->install
 		A.1.2) Make sure you have this node environment variable set in your operative system
-		A.1.3) Restart visual studio code and test once again the npm install command in the previously cloned github repository(Now, it should work as expected)
+		A.1.3) Restart visual studio code and test once again the npm install command in the previously cloned github repository (Now, it should work as expected. But if for some reason it fails due to some mocha dependencies that are set on purpose for a specific more stable version. Just ignore them by using an "npm install --force" command)
 6) For testing the automated test cases, there are 2 ways, by using the following predefined script commands I have created:
 
 						First Command: npm run openC
 
 This will open the cypress dashboard, where you can select the browser that you want to use to automate (this is a headed UI mode dashboard for testing)
-Then, you will be able to select the automated test cases based on your need. (if an error appears please execute the following command: npx cypress install, and try again)
+Then, you will be able to select the automated test cases based on your need. (if an error appears that says you need to install cypress please execute the following command: npx cypress install, and try again)
 In this segment, you just have to click any test case visually, and automatically it will start automating(even though here we only have one test file with 3 test case scenarios, but nevertheless it is good to know)
 On the left side of the cypress dashboard, you have the cypress console, which lets you access each test step interactively and shows assertions that work as step confirmations or in the case of the expected and actual results in form of acceptance tests.
 On the right side, you have the DOM web page content UI subject of the test steps that make it change.
